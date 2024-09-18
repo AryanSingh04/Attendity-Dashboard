@@ -16,7 +16,7 @@ const LineChartComponent = ({ className }) => {
     <div className={className}>
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
-        
+          
           data={data}
           margin={{
             top: 5,
@@ -32,7 +32,7 @@ const LineChartComponent = ({ className }) => {
           <Tooltip content={<CustomTooltip />} />
        
           <Line type="monotone" dataKey="late_arrivals" stroke="#8884d8"  strokeWidth={6} activeDot={{ r: 8 }} dot={false} />
-          <Line type="monotone" dataKey="absences" stroke="#82ca9d" strokeWidth={6} dot={false} />
+          <Line  type="monotone" dataKey="absences" stroke="#82ca9d" strokeWidth={6} dot={false} />
         </LineChart>
       </ResponsiveContainer>
     </div>
